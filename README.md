@@ -34,6 +34,7 @@ The context root is set in the `src/main/webapp/WEB-INF/ibm-web-ext.xml` file. T
 * **Microservice Builder** : Microservice Builder delivers a turnkey solution incorporating a runtime, tooling, DevOps, fabric, and customer-managed container orchestration. See the [Microservice Builder docs](https://developer.ibm.com/microservice-builder/) for more details. 
 
 * **MicroProfile** : The [MicroProfile project](http://microprofile.io/) is an open community with the aim of optimizing Enterprise Java for a microservices architecture.  MicroProfile will be evolving with guidance from the community. For the complete feature documentation, see the [microProfile-1.0](http://www.ibm.com/support/knowledgecenter/en/SSEQTP_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/rwlp_feature_microProfile-1.0.html) feature description in IBM Knowledge Center. If you want to share your thoughts you can post straight to the [MicroProfile Google group](https://groups.google.com/forum/#!forum/microprofile).        
+
 ### Run
 
 To build and run the application:
