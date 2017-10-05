@@ -13,8 +13,8 @@
         <maven.compiler.target>1.8</maven.compiler.target>
 
         <app.name>factorial</app.name>
-        <testServerHttpPort>9080</testServerHttpPort>
-        <testServerHttpsPort>9443</testServerHttpsPort>
+        <testServerHttpPort>9081</testServerHttpPort>
+        <testServerHttpsPort>9444</testServerHttpsPort>
         <warContext>${app.name}</warContext>
         <package.file>${project.build.directory}/${app.name}.zip</package.file>
         <packaging.type>usr</packaging.type>
@@ -129,7 +129,7 @@
             <plugin>
                 <groupId>net.wasdev.wlp.maven.plugins</groupId>
                 <artifactId>liberty-maven-plugin</artifactId>
-                <version>1.2</version>
+                <version>2.0</version>
                 <extensions>true</extensions>
                 <configuration>
                     <install>
