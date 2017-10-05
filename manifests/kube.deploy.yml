@@ -10,9 +10,9 @@ spec:
   ports:
   # the port that this service should serve on
   - name: http
-    port: 9080
+    port: 9081
   - name: https
-    port: 9443
+    port: 9444
 
   selector:
     app: "factorial-selector"
@@ -33,6 +33,7 @@ spec:
       containers:
       - name: factorial
         image: factorial:latest
+        imagePullPolicy: IfNotPresent
         # resources:
         #   requests:
         #     cpu: 100m
