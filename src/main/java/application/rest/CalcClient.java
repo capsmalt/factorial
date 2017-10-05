@@ -2,17 +2,24 @@ package application.rest;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.Dependent;
+import javax.inject.Inject;
 import javax.json.JsonObject;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 
+import org.eclipse.microprofile.config.inject.ConfigProperty;
+
 @Dependent
 public class CalcClient {
+	
+	@Inject
+	@ConfigProperty(name="CALC_SERVICE_SERVICE_HOST", defaultValue="localhost")
+    private String calcHost;
 
-    private String calcHost = "localhost";
-
-    private String calcPort = "9080";
+    @Inject
+    @ConfigProperty(name="CALC_SERVICE_SERVICE_PORT_HTTP", defaultValue="9080")
+    private String calcPort;
     
     private String calcServiceUrl;
 
